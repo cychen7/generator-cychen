@@ -1,48 +1,46 @@
 {
-  "name": "generator-cychen",
-  "version": "0.0.0",
-  "description": "mygenerator",
-  "homepage": "",
+  "name": "generator-koa-sudiyi",
+  "version": "1.1.4",
+  "description": "A yo generator with koa.js from sudiyi.",
+  "homepage": "https://github.com/solee0524/generator-koa-sudiyi#readme",
   "author": {
-    "name": "cy",
-    "email": "cychen7@sina.com",
-    "url": "https://cychen7.github.io/"
+    "name": "solee0524",
+    "email": "iblee0524@gmail.com",
+    "url": "http://solee.me"
   },
   "files": [
     "generators"
   ],
-  "main": "generators\\index.js",
+  "main": "generators/index.js",
   "keywords": [
-    "",
-    "yeoman-generator"
+    "yeoman-generator",
+    "generator-koa-sudiyi",
+    "koa",
+    "sudiyi",
+    "solee"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.23.0",
+    "yeoman-generator": "^0.21.1",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.0"
+    "yosay": "^1.0.2",
+    "deep-extend": "^0.4.0",
+    "lodash": "^3.6.0",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "yeoman-test": "^1.0.0",
-    "yeoman-assert": "^2.0.0",
-    "eslint": "^2.1.0",
-    "eslint-config-xo-space": "^0.13.0",
-    "gulp": "^3.9.0",
+    "babel-eslint": "^6.0.2",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.7.0",
+    "gulp": "^3.9.1",
     "gulp-eslint": "^2.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-istanbul": "^0.10.3",
-    "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nsp": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "yeoman-assert": "^2.0.0"
   },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
-  },
-  "repository": "cychen7/generator-cychen",
+  "repository": "solee0524/generator-koa-sudiyi",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

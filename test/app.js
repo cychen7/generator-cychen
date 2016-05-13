@@ -1,18 +1,22 @@
 'use strict';
 var path = require('path');
 var assert = require('yeoman-assert');
-var helpers = require('yeoman-test');
+var helpers = require('yeoman-generator').test;
 
-describe('generator-cychen:app', function () {
-  before(function () {
-    return helpers.run(path.join(__dirname, '../generators/app'))
+
+describe('generator-koa-sudiyi:app', function () {
+  before(function (done) {
+    helpers.run(path.join(__dirname, '../generators/app'))
+      .withOptions({someOption: true})
       .withPrompts({someAnswer: true})
-      .toPromise();
+      .on('end', done);
   });
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      'README.md'
     ]);
   });
 });
+
+
